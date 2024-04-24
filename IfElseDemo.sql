@@ -26,7 +26,7 @@ END IF;
 
 DBMS_OUTPUT.PUT_LINE('Job is ' ||v_job );
 
-DBMS_OUTPUT.PUT_LINE(v_per ||'% salary increaed ');
+DBMS_OUTPUT.PUT_LINE(v_per ||'% salary increased. ');
 
 END;
 
