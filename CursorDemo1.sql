@@ -9,8 +9,9 @@ BEGIN
 	LOOP
 		FETCH c1 INTO r;
     EXIT WHEN c1%NOTFOUND;
-		UPDATE employee SET sal = sal + sal * r.per/100
+		UPDATE employee2 SET sal = sal + sal * r.per/100
 		WHERE empno = r.empno;
+	END LOOP;
 	COMMIT;
     dbms_output.put_line(c1%ROWCOUNT || ' rows updated...');
 	CLOSE c1;
