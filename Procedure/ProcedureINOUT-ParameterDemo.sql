@@ -1,0 +1,12 @@
+-- SQUARE(a)  => 9
+
+
+CREATE OR REPLACE PROCEDURE
+SQUARE( x IN OUT NUMBER)
+AS
+BEGIN
+       x:= x * x;
+
+
+END;
+/
